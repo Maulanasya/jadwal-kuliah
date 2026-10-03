@@ -304,7 +304,7 @@ export default function Dashboard() {
                                 animate={{ opacity: 1 }}
                                 className="text-sm font-semibold text-gray-500 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center"
                               >
-                                Tidak ada jadwal kuliah di hari {day}. Waktunya rebahan & main game! 🎮
+                                Tidak ada jadwal kuliah di hari {day}. Waktunya rebahan 
                               </motion.div>
                             ) : (
                               schedules.map((item, idx) => (
