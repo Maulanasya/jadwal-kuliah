@@ -40,12 +40,10 @@ type ScheduleStructure = {
 // Main Weekly Class Schedules Data
 const SCHEDULE_DATA: ScheduleStructure = {
   "TIF RP24B": {
-    senin: [
-      { time: "20:20 - 22:20", title: "Intelegensi Buatan", type: "Teori", color: "bg-secondary", room: "Online", sks: 3 }
-    ],
+    senin: [],
     selasa: [
       { time: "10:00 - 12:00", title: "Sistem Informasi Enterprise", type: "Teori", color: "bg-primary", room: "Online", sks: 3 },
-      { time: "18:20 - 20:20", title: "Project Integration Methodology of Excellence", type: "Teori", color: "bg-tertiary", text: "text-dark", room: "Online", sks: 3 }
+      { time: "18:20 - 20:20", title: "Intelegensi Buatan", type: "Teori", color: "bg-secondary", room: "Ruang B 101", sks: 3 }
     ],
     rabu: [
       { time: "08:00 - 10:00", title: "Pemrograman Mobile II", type: "Praktikum", color: "bg-primary", room: "Ruang A 101", sks: 3 },
@@ -53,7 +51,8 @@ const SCHEDULE_DATA: ScheduleStructure = {
     ],
     kamis: [
       { time: "10:00 - 12:00", title: "Augmented & Virtual Reality", type: "Praktikum", color: "bg-tertiary", text: "text-dark", room: "Ruang B 101", sks: 3 },
-      { time: "15:00 - 16:20", title: "Bahasa Indonesia", type: "Teori", color: "bg-primary", room: "Online", sks: 2 }
+      { time: "15:00 - 16:20", title: "Bahasa Indonesia", type: "Teori", color: "bg-primary", room: "Online", sks: 2 },
+      { time: "18:20 - 20:20", title: "Project Integration Methodology of Excellence", type: "Teori", color: "bg-secondary", room: "Ruang B 101", sks: 3 }
     ],
     jumat: [
       { time: "15:00 - 17:00", title: "Sistem Mikroprosesor", type: "Teori", color: "bg-primary", room: "Ruang A 401", sks: 3 }
@@ -80,9 +79,9 @@ const SCHEDULE_DATA: ScheduleStructure = {
 // Course Lecturers Contact Information Data
 const LECTURERS_DATA: Record<string, Array<{ name: string; role: string; initials: string; color: string; room: string; phone: string }>> = {
   "TIF RP24B": [
-    { name: "Muhammad Shalahuddin, ST., MT.", role: "Dosen Intelegensi Buatan", initials: "MS", color: "bg-secondary text-white", room: "Online", phone: "6281234567890" },
+    { name: "Muhammad Ikhwan Fathulloh, S.Kom.", role: "Dosen Intelegensi Buatan", initials: "MI", color: "bg-secondary text-white", room: "Ruang B 101", phone: "6281234567890" },
     { name: "Deni Heryanto, A.Md.Kom., ST., M.Kom", role: "Dosen Sistem Informasi Enterprise", initials: "DH", color: "bg-primary text-white", room: "Online", phone: "6281234567891" },
-    { name: "Rudhi Wahyudi Febrianto, S.Kom., M.Kom.", role: "Dosen Project Integration", initials: "RW", color: "bg-tertiary text-dark", room: "Online", phone: "6281234567892" },
+    { name: "Rudhi Wahyudi Febrianto, S.Kom., M.Kom.", role: "Dosen Project Integration", initials: "RW", color: "bg-tertiary text-dark", room: "Ruang B 101", phone: "628997905345" },
     { name: "Dedi Rosadi, S.Kom.", role: "Dosen Pemrograman Mobile II", initials: "DR", color: "bg-primary text-white", room: "Ruang A 101", phone: "6281234567893" },
     { name: "Syarif Hidayat, S.Kom.", role: "Dosen Desain Kreatif Aplikasi & Game", initials: "SH", color: "bg-secondary text-white", room: "Ruang A 306", phone: "6281234567894" },
     { name: "Yayat Sutrayana, S.T., M.Kom.", role: "Dosen Augmented & Virtual Reality", initials: "YS", color: "bg-tertiary text-dark", room: "Ruang B 101", phone: "6281234567895" },
